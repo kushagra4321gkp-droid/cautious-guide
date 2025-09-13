@@ -1,3 +1,3 @@
 # cautious-guide
-will start dsa in java
+will start oct
 ok
