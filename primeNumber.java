@@ -15,18 +15,21 @@ public class primeNumber{
         // }
         // System.out.println("prime");
 
-        boolean is_prime = true;
-
-        for(int i = 2; i<num; i++){
-            if(num%i==0){
-                is_prime = false;
-            }
-        }
-
-        if(is_prime == true){
-            System.out.println(num + " is prime");
+        if(num==2){
+            System.out.println("prime");
         }else{
-            System.out.println(num + " is not prime");
+            boolean is_prime = true;
+            for(int i = 2; i<=Math.sqrt(num); i++){
+                if(num%i==0){
+                    is_prime = false;
+                }
+            }
+
+            if(is_prime == true){
+                System.out.println(num + " is prime");
+            }else{
+                System.out.println(num + " is not prime");
+            }
         }
 
     }
