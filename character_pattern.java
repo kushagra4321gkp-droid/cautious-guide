@@ -14,5 +14,6 @@ public class character_pattern{
             System.out.println();
         }
     }
+    // commited, not a good idea but i promise my self that i will comeback!
 }
     
