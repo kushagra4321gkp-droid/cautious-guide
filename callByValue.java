@@ -8,5 +8,6 @@ public class callByValue{
         int a = 5;
         changeA(a);
         System.out.println(a); //java's function always take copy of variable, not the actual value -> that's why this concept is called "CALL BY VALUE"
+
     }
 }
