@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class overloadingUsingDatatypes {
 
     public static int sum(int a, int b){
@@ -8,23 +10,31 @@ public class overloadingUsingDatatypes {
         return a + b;
     }
 
-    public static void checkPrime(int n){
-        boolean isPrime = true;
+    public static boolean checkPrime(int n){
+        
         if(n==2){
-            System.out.println("prime");
+            return true;
         }else{
             for(int i = 2; i<n; i++){
             if(n%i==0){
-                isPrime = false;
+                return false;
                 break;
             }
             }  
             if(isPrime == true){
-                System.out.print("prime");
+                return true;
             }else{
-                System.out.println("not prime");
+                return false;
             }  
 
+        }
+    }
+
+    public static void primeInRange(int n){
+        for(int i = 2; i<=n; i++){
+            if(checkPrime(i) == 'prime'){
+                System.out.println(i);
+            }
         }
     }
 
@@ -32,6 +42,10 @@ public class overloadingUsingDatatypes {
         //System.out.println(sum(3, 5));
         //System.out.println(sum(3.2f, 4.8f));
 
-        checkPrime(11);
+        //checkPrime(11);
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        primeInRange(n);
     }
 }
