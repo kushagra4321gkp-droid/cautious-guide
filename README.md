@@ -10,7 +10,7 @@ The `cautious-guide` repository offers a curated set of Java programs aimed at h
 
 ## 🧪 Programs Included
 
-The repository contains the following Java programs:
+The repository contains the following Java programs and many more:
 
 - `Addition.java`
 - `AreaOfCircle.java`
@@ -52,12 +52,12 @@ To run the programs locally, ensure you have the following installed:
 
    Compile the Java program you want to run:
 
-   javac ProgramName.java
+   🚀 javac ProgramName.java
 
 
 3. Run the compiled program:
 
-   java ProgramName
+   🚀 java ProgramName
 
 
    Replace ProgramName with the name of the Java file you wish to run.   
