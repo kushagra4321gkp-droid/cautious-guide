@@ -44,3 +44,21 @@ To run the programs locally, ensure you have the following installed:
    ```bash
    git clone https://github.com/kushagra4321gkp-droid/cautious-guide.git
 
+2. Navigate to the cloned repository:
+
+   cd cautious-guide
+
+   Running a Program
+
+   Compile the Java program you want to run:
+
+   javac ProgramName.java
+
+
+3. Run the compiled program:
+
+   java ProgramName
+
+
+   Replace ProgramName with the name of the Java file you wish to run.   
+
