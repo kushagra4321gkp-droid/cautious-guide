@@ -22,7 +22,7 @@ public class Trapping_RainWater {
     //             aux2[i] = arr[i];
     //         }else{
     //             aux2[i] = aux2[i+1];
-    
+
     //         }
     //         System.out.print(aux2[i] + " ");
     //     }
