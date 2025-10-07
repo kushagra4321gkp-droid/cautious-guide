@@ -14,6 +14,7 @@ public class Bubble_Sort {
 
     public static void main(String[] args) {
         int[] arr = {5, 4, 1, 3, 2};
+        //int[] arr = {5, 4, 1, 3, 2, 7, 8, 17, 12, 14}; //testing
         bubbleSort(arr);
         for(int i = 0; i<arr.length; i++){
             System.out.print(arr[i] + " ");
