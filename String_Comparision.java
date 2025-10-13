@@ -8,6 +8,51 @@ public class String_Comparision {
         return string1;
     }
 
+    //Use StringBuilder (or StringBuffer if thread-safe needed)
+
+    //     So what’s happening under the hood?
+
+    // Each string1 += ... line creates:
+
+    // A new String object
+
+    // Copies the old string contents + the new character into it
+
+    // Discards the old string (waiting for GC)
+
+    // ⚙️ Time Complexity
+
+    // For each iteration, copying happens — that’s O(n) per concatenation.
+
+    // So, if you’re concatenating n times, the total cost is:
+
+    // 𝑂
+    // (
+    // 1
+    // +
+    // 2
+    // +
+    // 3
+    // +
+    // .
+    // .
+    // .
+    // +
+    // 𝑛
+    // )
+    // =
+    // 𝑂
+    // (
+    // 𝑛
+    // 2
+    // )
+    // O(1+2+3+...+n)=O(n
+    // 2
+    // )
+
+    // So yes — time complexity is quadratic.
+    // For something like 100,000 concatenations — it’s very slow.
+
     public static void main(String[] args) {
         // String s1 = "Tony";
         // String s2 = "Tony";
