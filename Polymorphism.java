@@ -1,3 +1,11 @@
+public class Polymorphism {
+    public static void main(String[] args) {
+        skyscrapers sky = new skyscrapers();
+        sky.tallest();
+        sky.tallest("Burj Khalifa", 494);
+        sky.tallest("Qutub Minar");
+    }
+}
 class skyscrapers{
     //This is Compile time Polymorphism or Static binding or early binding
     //Compile decides which method to run on the basis of type and number of Parameters
@@ -9,12 +17,6 @@ class skyscrapers{
         System.out.println(name + " is tallest");
     }
     void tallest(String name, int height){
-        System.out.println(name + " is tallest with height of " + height);
-    }
-}
-
-public class Polymorphism {
-    public static void main(String[] args) {
-        
+        System.out.println(name + " is tallest with height of " + height + "m");
     }
 }
