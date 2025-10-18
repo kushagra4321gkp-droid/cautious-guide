@@ -3,6 +3,8 @@ public class RecursionProblem1 {
         //Recursion r = new Recursion();
         //r.decreasingOrder(5);
         System.out.println(factorial(5));
+
+        System.out.println("Sum of First n NN is : " + SumOfFirstn(5) );
     }
 
 
@@ -11,6 +13,13 @@ public static int factorial(int n){
         return 1;
     }
     return n * factorial(n-1);
+}
+
+public static int SumOfFirstn(int n){
+    if(n == 1){
+        return 1;
+    }
+    return n + SumOfFirstn(n-1);
 }
 
 // class Recursion{
