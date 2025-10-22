@@ -11,7 +11,7 @@ public class FirstOccurenceInArray {
             if(arr[i] == key){
                 return i;
             }
-            return 0;
+            return -1;
         }
         if(arr[i] == key){
             return i;
