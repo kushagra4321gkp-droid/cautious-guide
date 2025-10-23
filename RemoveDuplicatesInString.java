@@ -17,7 +17,7 @@ public class RemoveDuplicatesInString {
         char currentChar = givenString.charAt(i);
         int index = currentChar - 'a';
 
-        if (!map[index]) {
+        if (map[index] == false) {
             newStr.append(currentChar);
             map[index] = true;
         }   
