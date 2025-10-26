@@ -1,21 +1,52 @@
 public class QuickSort {
 
-    public static void quickSort(int arr[], int pivot){
-        if(pivot == 0){
+    // public static void quickSort(int arr[], int pivot){
+    //     if(pivot == 0){
+    //         return;
+    //     }
+    //     int j = 0;
+    //     int i = -1;
+    //     while(j < arr.length){
+    //         if(arr[j] <= arr[pivot]){
+    //         i++;
+    //         int temp = arr[j];
+    //         arr[j] = arr[i];
+    //         arr[i] = temp;
+    //     }
+    //     j++;
+    //     }
+    //     quickSort(arr, pivot-1);
+    // }
+
+    public static void quickSort(int arr[], int si, int ei){
+        if(si >= ei){
             return;
         }
-        int j = 0;
-        int i = -1;
-        while(j < arr.length){
-            if(arr[j] <= arr[pivot]){
-            i++;
-            int temp = arr[j];
-            arr[j] = arr[i];
-            arr[i] = temp;
+
+        int pivotIndex = partition(arr, si, ei);
+
+        quickSort(arr, si, pivotIndex-1);
+        quickSort(arr, pivotIndex+1, ei);
+
+    }
+
+    public static int partition(int arr[], int si, int ei){
+        int pivot = arr[ei];
+        int i = si - 1;
+
+        for(int j = si; j<ei; j++){
+            if(arr[j] <= pivot){
+                i++;
+                int temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
+            }
         }
-        j++;
-        }
-        quickSort(arr, pivot-1);
+        int temp = arr[ei];
+        arr[ei] = arr[i+1];
+        arr[i+1] = temp;
+
+        return i + 1;
     }
 
     public static void main(String[] args) {
@@ -24,8 +55,8 @@ public class QuickSort {
         // int arr[] = {2, 2, 2, 2, 1};
         // int arr[] = {5, 4, 3, 2, 1, 0};
 
-        int pivot = arr.length-1;
-        quickSort(arr, pivot);
+        // int pivot = arr.length-1;
+        quickSort(arr, 0, arr.length-1);
 
         for(int i = 0; i<arr.length; i++){
             System.out.print(arr[i] + " ");
@@ -79,4 +110,6 @@ public class QuickSort {
 //         }
 //     }
 // }
+
+
 
