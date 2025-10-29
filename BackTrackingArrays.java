@@ -48,7 +48,10 @@ public class BackTrackingArrays {
 
         //While going up in the call stack, i did commit some changes in my array and because of those changes, in base case our array used to look like this --> 1 2 3 4 5.
         //and when i returned from my base case, so inside main, after end of recursion, my array looks like this --> -1 0 1 2 3 --> this result is because of Backtracking.
-        //Backtracking means when 
+        //Backtracking means when you perform some function after comming back from call stack(recursion) 
+        //TC is O(2n) --> O(n)
+        //SC is O(n) --> which is because of n call stacks.
+        //And since we know that we take auxillary space as the input function of Space Complexity so it is because of call stack ,i.e, O(n).
 
     }
 
